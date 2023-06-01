@@ -7,14 +7,17 @@
     <title>mainPage</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <script defer src="./js/slide.js"></script>
     <script
       src="https://kit.fontawesome.com/d8cf2a0e08.js"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nanum+Myeongjo:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -47,6 +50,42 @@
             <span>기록하세요.</span>
             <span>매 순간을 의미있는 시간으로 만들기 위해</span>
           </p>
+        </article>
+        <article class="editor__pic">
+          <div class="wrap_slide">
+            <ul class="slides">
+              <li style="background-color: #a0ddff">
+                <div></div>
+              </li>
+              <li style="background-color: #758ecd">
+                <div></div>
+              </li>
+              <li style="background-color: #c1cefe">
+                <div></div>
+              </li>
+              <li style="background-color: #7189ff">
+                <div></div>
+              </li>
+              <li style="background-color: #624cab">
+                <div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="wrap_slide__index">
+            <div value="0" class="emphasis">01</div>
+            <div value="1">02</div>
+            <div value="2">03</div>
+            <div value="3">04</div>
+            <div value="4">05</div>
+          </div>
+          <div class="slide__btns">
+            <div class="slide__btn slide__btn-left">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="slide__btn slide__btn-right">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
         </article>
       </main>
       <footer class="footer"></footer>

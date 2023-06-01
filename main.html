@@ -8,21 +8,39 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <script defer src="./js/slide.js"></script>
+    <script defer src="./js/sidebar.js"></script>
     <script
       src="https://kit.fontawesome.com/d8cf2a0e08.js"
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nanum+Myeongjo:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nanum+Gothic&family=Nanum+Myeongjo:wght@400;700&family=Quintessential&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
+      <main class="side-bar" style="left: -260px">
+        <div class="side-bar-top">
+          <span><img src="./img/betterUsCircleLogo.png" alt="logo" /></span>
+          <p>
+            The Story of
+            <br />
+            Being Better
+          </p>
+          <div>Start Better US</div>
+        </div>
+        <div class="side-bar-bottom">
+          <ul>
+            <li class="currentPage">better US Home</li>
+            <li>better US Now</li>
+            <li>better US Library</li>
+          </ul>
+          <div class="side-bar-user-guide">계정을 잊어버리셨습니까?</div>
+        </div>
+      </main>
       <header class="header">
         <div class="header__top">
           <div class="header__content">
@@ -79,13 +97,23 @@
             <div value="4">05</div>
           </div>
           <div class="slide__btns">
-            <div class="slide__btn slide__btn-left">
+            <div class="slide__btn slide__btn-left slide__btn-disappear">
               <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="slide__btn slide__btn-right">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
+        </article>
+        <article class="keywords">
+          <h3 class="keywords_title">BETTERUS KEYWORDS</h3>
+          <p class="keywords_intro">키워드로 분류된 다양한 글 모음</p>
+          <div class="keyword"></div>
+        </article>
+        <article class="writers">
+          <h3 class="writers_title">BETTERUS WRITERS</h3>
+          <p class="writers_intro">브런치 추천 작가</p>
+          <div class="writer"></div>
         </article>
       </main>
       <footer class="footer"></footer>

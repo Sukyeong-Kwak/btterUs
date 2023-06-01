@@ -22,13 +22,28 @@ function rightSlide() {
     slideNumber += 1;
     setTransform();
   }
-  console.log(slideNumber);
+  if (slideNumber == MAX) {
+    rightSlideButton.classList.add("slide__btn-disappear");
+  } else if (slideNumber == MIN) {
+    leftSlideButton.classList.add("slide__btn-disappear");
+  } else {
+    leftSlideButton.classList.remove("slide__btn-disappear");
+    rightSlideButton.classList.remove("slide__btn-disappear");
+  }
 }
 
 function leftSlide() {
   if (slideNumber > MIN) {
     slideNumber -= 1;
     setTransform();
+  }
+  if (slideNumber == MAX) {
+    rightSlideButton.classList.add("slide__btn-disappear");
+  } else if (slideNumber == MIN) {
+    leftSlideButton.classList.add("slide__btn-disappear");
+  } else {
+    leftSlideButton.classList.remove("slide__btn-disappear");
+    rightSlideButton.classList.remove("slide__btn-disappear");
   }
 }
 

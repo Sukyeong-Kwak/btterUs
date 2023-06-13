@@ -7,12 +7,18 @@
     <title>mainPage</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/editorPic.css" />
     <script defer src="./js/slide.js"></script>
     <script defer src="./js/sidebar.js"></script>
-    <script
-      src="https://kit.fontawesome.com/d8cf2a0e08.js"
+    <script defer src="./js/keywords.js"></script>
+    <script defer src="./js/writers.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,20 +78,32 @@
         <article class="editor__pic">
           <div class="wrap_slide">
             <ul class="slides">
-              <li style="background-color: #a0ddff">
-                <div></div>
+              <li class="type1" style="background-color: #a0ddff">
+                <div class="type1-article1"></div>
+                <div class="type1-article2"></div>
+                <div class="type1-article3"></div>
               </li>
-              <li style="background-color: #758ecd">
-                <div></div>
+              <li class="type2" style="background-color: #758ecd">
+                <div class="type2-article1"></div>
+                <div class="type2-article2"></div>
+                <div class="type2-article3"></div>
               </li>
-              <li style="background-color: #c1cefe">
-                <div></div>
+              <li class="type3" style="background-color: #c1cefe">
+                <div class="type3-article1"></div>
+                <div class="type3-article2"></div>
+                <div class="type3-article3"></div>
+                <div class="type3-article4"></div>
               </li>
-              <li style="background-color: #7189ff">
-                <div></div>
+              <li class="type4" style="background-color: #7189ff">
+                <div class="type4-article1"></div>
+                <div class="type4-article2"></div>
+                <div class="type4-article3"></div>
               </li>
-              <li style="background-color: #624cab">
-                <div></div>
+              <li class="type5" style="background-color: #624cab">
+                <div class="type5-article1"></div>
+                <div class="type5-article2"></div>
+                <div class="type5-article3"></div>
+                <div class="type5-article4"></div>
               </li>
             </ul>
           </div>
@@ -108,15 +126,40 @@
         <article class="keywords">
           <h3 class="keywords_title">BETTERUS KEYWORDS</h3>
           <p class="keywords_intro">키워드로 분류된 다양한 글 모음</p>
-          <div class="keyword"></div>
+          <div class="keyword_space">
+            <div class="keyword_big-box"></div>
+          </div>
         </article>
         <article class="writers">
           <h3 class="writers_title">BETTERUS WRITERS</h3>
           <p class="writers_intro">브런치 추천 작가</p>
-          <div class="writer"></div>
+          <div class="writers-categories">
+            <div class="writers-category current-category">경제적 자유</div>
+            <div class="writers-category">자기계발</div>
+            <div class="writers-category">행복</div>
+          </div>
+          <div class="writer-profile-boxes">
+            <div class="writer-profile-box current-box"></div>
+            <div class="writer-profile-box"></div>
+            <div class="writer-profile-box"></div>
+          </div>
+          <div class="writer_space">
+            <div class="writer_big-box"></div>
+          </div>
         </article>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="inner_footer">
+          <div class="footer-info">
+            <div class="writing">
+              <img src="./img/betterUsCircleLogo.png" alt="logo" />
+              <p>The Story of<br />Being Better</p>
+            </div>
+            <div class="policy"></div>
+          </div>
+          <div class="footer-corp"></div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
